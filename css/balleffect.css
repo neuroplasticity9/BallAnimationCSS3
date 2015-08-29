@@ -1,0 +1,127 @@
+.navtop {height:48px;background:#fff;border-bottom:1px solid #cdcdcd;left:0;top: 0;position:fixed;text-align:center;width:100%;z-index: 999;box-shadow:0 2px 4px rgba(0,0,0,0.1)}
+.navtop-border{position:absolute;bottom:0;height: 1px;background-color: #e0e0e0;left:0;width: 100%;}
+.navtop .iconmenu {display:block;float:left;width: 50px;height:49px;}
+.navtop .iconmenu span {background:url('../images/menu-icon.png') 0 0 no-repeat;background-size:contain;-webkit-background-size:contain;width:18px;height:13px;display: block;float: left;margin: 18px 0 0 15px;transition: transform 0.4s ease-in-out;}
+.navtop .iconmenu:hover {cursor:pointer}
+.navtop .iconmenu:hover span {transform:rotate(630deg) scale(2)}
+.navtop .logo {padding-top:12px;display:inline-block;position:relative;width: 169px;height: 50px;}
+.navtop .logo img {transition: transform 0.3s ease-in-out}
+.navtop .logo.active img {display:none}
+h1.sologan {
+    margin: 15px auto 0;
+    width: 100%;
+    text-align: center;
+    color: #9A9A9A;
+}
+.logo .bgLogo {background:url('../images/soc-vui-logo.png') 0 0 no-repeat;height:25px;width: 25px;position:absolute;top: 12px;left: 2px;display:none;}
+.logo.active .bgLogo{display:block}
+.logo .chrS {background-position:-2px 0;}
+.logo .chrO {background-position:-30px 0;left:30px;}
+.logo .chrC {background-position:-58px 0;left:58px;}
+.logo .chrV {background-position:-88px 0;left: 88px;}
+.logo .chrU {background-position:-116px 0;left: 116px;}
+.logo .chrI {background-position:-144px 0;left: 144px;}
+
+.logo.active .chrS {
+    animation-name: chrSA;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: initial;
+    animation-iteration-count:1;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+@keyframes chrSA {
+    0% {transform:rotate(0deg)}
+    10% {left:-20px;transform:rotate(-190deg)}
+    20%{left:-20px;transform:rotate(-190deg)}
+    25%{left:-20px;transform:rotate(1000deg)}
+    30%{left:7px;transform:rotate(3600deg)}
+    40%{left:-10px;transform:rotate(3400deg)}
+    100%{left:3px;transform:rotate(3600deg)}
+}
+
+.logo.active .chrO {
+    animation-name: chrOA;
+    animation-duration: 1s;
+    animation-timing-function:ease-out;
+    animation-delay: 1.1s;
+    animation-iteration-count:1;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state:initial;
+}
+@keyframes chrOA {
+     0% {transform:rotate(0deg)}
+    5% {left:33px;transform:rotate(90deg)}
+    40% {left:18px;transform:rotate(-90deg)}
+    100% {left:30px;transform:rotate(0deg)}
+}
+
+.logo.active .chrC {
+    animation-name: chrCA;
+    animation-duration: 0.9s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.1s;
+    animation-iteration-count:1;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+@keyframes chrCA {
+     0% {transform:rotate(0deg)}
+    5% {left:69px;transform:rotate(90deg)}
+    40% {left:44px;transform:rotate(-90deg)}
+    100% {left:58px;transform:rotate(0deg)}
+}
+
+.logo.active .chrV {
+    animation-name: chrVA;
+    animation-duration:0.9s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.14s;
+    animation-iteration-count:1;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+@keyframes chrVA {
+     0% {transform:rotate(0deg)}
+    5% {left:93px;transform:rotate(90deg)}
+    40% {left:70px;transform:rotate(-90deg)}
+    100% {left:88px;transform:rotate(0deg)}
+}
+
+.logo.active .chrU {
+    animation-name: chrUA;
+    animation-duration:0.9s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.2s;
+    animation-iteration-count:1;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+@keyframes chrUA {
+     0% {transform:rotate(0deg)}
+    5% {left:126px;transform:rotate(90deg)}
+    40% {left:107px;transform:rotate(-90deg)}
+    100% {left:116px;transform:rotate(0deg)}
+}
+
+.logo.active .chrI {
+    animation-name: chrIA;
+    animation-duration:2s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.2s;
+    animation-iteration-count:1;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+@keyframes chrIA {
+     0% {transform:rotate(0deg)}
+    50% {left:265px;transform:rotate(750deg)}
+    100% {left:144px;transform:rotate(0deg)}
+}
